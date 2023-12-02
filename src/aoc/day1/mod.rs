@@ -47,12 +47,10 @@ impl Day for Trebuchet {
         for line in input.0 {
             let Some(first) = first_text(&line) else {
                 continue;
-                //panic!("{:?}", std::str::from_utf8(&line).expect("foobar"));
             };
 
             let Some(last) = last_text(&line) else {
                 continue;
-                //panic!("{:?}", std::str::from_utf8(&line).expect("foobar"));
             };
 
             let cur = first * 10 + last;
