@@ -9,9 +9,9 @@ pub struct Cli {
     pub day: usize,
 }
 
-#[derive(ValueEnum, Clone)]
+#[derive(ValueEnum, Clone, Default)]
 pub enum Input {
-    Example,
+    #[default]
     Primary,
     Secondary,
 }
